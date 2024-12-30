@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Fisherman</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container">
+            <!-- Top Bar -->
+            <div class="row py-3 align-items-center">
+                <div class="col-auto">
+                    <img src="./images/logo.png" alt="Logo" height="40">
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search your Products">
+                        <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-outline-primary"><i class="bi bi-cart"></i></button>
+                        <button class="btn btn-outline-primary"><i class="bi bi-bookmark"></i></button>
+                        <button class="btn btn-outline-primary"><i class="bi bi-person"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-top sticky-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Special Gifts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">青物</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">イカ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">貝各種</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">魚介類</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">その他</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Form -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Register for Seller</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">User Name</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirm-password" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm your password">
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="phone1" class="form-label">First Phone No</label>
+                                    <input type="text" class="form-control" id="phone1" placeholder="Phone number">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="phone2" class="form-label">Second Phone No</label>
+                                    <input type="text" class="form-control" id="phone2" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="line-id" class="form-label">Line ID</label>
+                                <input type="text" class="form-control" id="line-id" placeholder="Enter Line ID">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ship-name" class="form-label">Ship Name</label>
+                                <input type="text" class="form-control" id="ship-name" placeholder="Enter Ship Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="org-name" class="form-label">Fish Organization Name</label>
+                                <input type="text" class="form-control" id="org-name"
+                                    placeholder="Enter Organization Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="trans-management" class="form-label">Transport Management</label>
+                                <input type="text" class="form-control" id="trans-management"
+                                    placeholder="Enter Transport Details">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Who We Are: Your Trusted Source for Fresh Seafood.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Contact us: user@email.com | 0987566292</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

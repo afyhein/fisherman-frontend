@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisherman</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -17,7 +19,7 @@
             <!-- Top Bar -->
             <div class="row py-3 align-items-center">
                 <div class="col-auto">
-                    <img src="./images/logo.png" alt="Logo" height="40">
+                    <img src="./images/logo.png" alt="Logo" height="104">
                 </div>
                 <div class="col">
                     <div class="input-group">
@@ -42,7 +44,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./home.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Special Gifts</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">青物</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">イカ</a></li>
@@ -60,34 +62,39 @@
     <!-- Main Content -->
     <main class="py-4">
         <div class="container">
-            <!-- Carousel -->
-            <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            <section>
+                <!-- Carousel -->
+                <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="fish1.jpg" class="d-block w-100" alt="Fresh Fish"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fish2.jpg" class="d-block w-100" alt="Seafood"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fish3.jpg" class="d-block w-100" alt="Fishing"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-                <div class="carousel-inner rounded">
-                    <div class="carousel-item active">
-                        <img src="fish1.jpg" class="d-block w-100" alt="Fresh Fish"
-                            style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="fish2.jpg" class="d-block w-100" alt="Seafood"
-                            style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="fish3.jpg" class="d-block w-100" alt="Fishing"
-                            style="height: 400px; object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+            </section>
 
             <!-- Category Navigation -->
             <div class="row mb-4">
@@ -110,27 +117,29 @@
             </div>
 
             <!-- Product Grid -->
-            <div class="row g-4">
-                <!-- Product Card -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card h-100">
-                        <img src="product1.jpg" class="card-img-top" alt="Product">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="text-danger fw-bold">$10</span>
-                                <span class="text-muted small">商品番号</span>
-                            </div>
-                            <h6 class="card-title">真鯛</h6>
-                            <p class="card-text small">A prized sea bream in Japanese cuisine...</p>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-sm btn-outline-primary w-50">Details</button>
-                                <button class="btn btn-sm btn-primary w-50">Buy</button>
+            <section>
+                <div class="row g-4">
+                    <!-- Product Card -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100">
+                            <img src="product1.jpg" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-danger fw-bold">$10</span>
+                                    <span class="text-muted small">商品番号</span>
+                                </div>
+                                <h6 class="card-title">真鯛</h6>
+                                <p class="card-text small">A prized sea bream in Japanese cuisine...</p>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-outline-primary w-50">Details</button>
+                                    <button class="btn btn-sm btn-primary w-50">Buy</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Repeat for other products -->
                 </div>
-                <!-- Repeat for other products -->
-            </div>
+            </section>
 
             <!-- Load More -->
             <div class="text-center mt-4">
